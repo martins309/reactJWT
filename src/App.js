@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { RouteGuard } from './components/RouteGuard';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      
-      </header>
+      <RouteGuard />
     </div>
   );
 }
