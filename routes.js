@@ -3,9 +3,9 @@ import { Redirect, Switch, Route, Router } from 'react-router-dom'
 import { history } from './helpers/history'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
-import { RouteGuard } from '../components/RouteGuard'
+import { RouteGuard } from './src/components/RouteGuard'
 
-const Routes = () => {
+export const Routes = () => {
     return (
         <Router history={history}>
             <Switch>

@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import { RouteGuard } from './components/RouteGuard';
-
+import Routers from './routes'
 
 function App() {
   return (
     <div className="App">
-      <RouteGuard />
+      <Routers />
     </div>
   );
 }

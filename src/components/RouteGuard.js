@@ -22,3 +22,4 @@ export const RouteGuard = ({ component: Component, ...rest }) => {
         /> 
     )
 }
+
