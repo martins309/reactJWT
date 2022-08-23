@@ -10,7 +10,7 @@ export const handleSubmit = (email, pass) => {
     axios.post("https://reqres.in/api/login", loginPayload)
         .then(response => {
             //get token from response
-            const tokken = response.data.tokken
+            const token = response.data.tokken
 
              //set JWT token to local 
              localStorage.setItem('token', token)
@@ -21,5 +21,5 @@ export const handleSubmit = (email, pass) => {
              //redirect user to home page
              window.location.href = '/'
         })
-        .catch(err => console.log)
+        .catch(err => console.log(err))
 }
