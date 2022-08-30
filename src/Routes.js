@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect, Route, Router } from 'react-router-dom'
+import { Route, Router, BrowserRouter } from 'react-router-dom'
 import { history } from './helpers/history'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
@@ -9,7 +9,6 @@ const Routes = () => {
         <Router history={history}>
             <Routes>
                 <Route
-                    exact
                     path='/'
                     element={<HomePage/>}
                 
@@ -18,7 +17,6 @@ const Routes = () => {
                     path='Login'
                     element={<LoginPage />}
                 />
-                <Redirect to='/' />
             </Routes>
         </Router>
     )

@@ -1,5 +1,5 @@
 import axios from "axios"
-
+import { setAuthToken } from "../helpers/setAuthToken"
 const LoginPage = () => {
 
    const handleSubmit = (email, password) => {
@@ -45,3 +45,4 @@ const LoginPage = () => {
 
 }
 
+export default LoginPage
