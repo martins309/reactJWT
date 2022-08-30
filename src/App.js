@@ -1,4 +1,4 @@
-import Routers from './routes'
+import Routes from './Routes'
 import {setAuthToken} from './helpers/setAuthToken'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routers />
+      <Routes />
     </div>
   );
 }

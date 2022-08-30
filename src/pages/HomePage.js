@@ -1,10 +1,12 @@
 import React from 'react'
 
 
-export const HomePage = () => {
+ const HomePage = () => {
     return (
         <>
             Home page ting
         </>
     )
 }
+
+export default HomePage
