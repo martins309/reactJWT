@@ -5,14 +5,14 @@ const LoginPage = () => {
    const handleSubmit = (email, password) => {
         //sample user regristration using reqres
         const loginPayload = {
-            email: 'eve.holy@reqres.in',
-            password: 'cityslicka'
+            email: email,
+            password: password
         }
     
         axios.post("https://reqres.in/api/login", loginPayload)
             .then(response => {
                 //get token from response
-                const token = response.data.tokken
+                const token = response.data.token
     
                  //set JWT token to local 
                  localStorage.setItem('token', token)
@@ -35,9 +35,9 @@ const LoginPage = () => {
             handleSubmit(email, password)
         }}
         >
-        <label for='email'>Email</label><br/>
+        <label>Email</label><br/>
         <input type='name' name='name' id='name'></input><br/>
-        <label for='email'>Email</label><br/>
+        <label>Email</label><br/>
         <input type='password' name='password' id='password'></input><br/>
         <input type='submit' value='submit' ></input><br/>
         </form>

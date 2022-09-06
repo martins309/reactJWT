@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Router, BrowserRouter } from 'react-router-dom'
+import { Route, Router } from 'react-router-dom'
 import { history } from './helpers/history'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
@@ -14,7 +14,7 @@ const Routes = () => {
                 
                 />
                 <Route 
-                    path='Login'
+                    path='/login'
                     element={<LoginPage />}
                 />
             </Routes>
