@@ -1,4 +1,3 @@
-import Routes from './Routes'
 import {setAuthToken} from './helpers/setAuthToken'
 import LoginPage from './pages/LoginPage';
 

@@ -37,7 +37,7 @@ const LoginPage = () => {
         >
         <label>Email</label><br/>
         <input type='name' name='name' id='name'></input><br/>
-        <label>Email</label><br/>
+        <label>Password</label><br/>
         <input type='password' name='password' id='password'></input><br/>
         <input type='submit' value='submit' ></input><br/>
         </form>
